@@ -9,7 +9,7 @@ using WebApiAuthors.Entity;
 namespace WebApiAuthors.Controllers
 {
     [ApiController]
-    [Route("api/authors")]
+    [Route("api/[controller]")]
     public class AuthorsController:ControllerBase
     {
         private ApplicationDbContext context;
@@ -18,10 +18,27 @@ namespace WebApiAuthors.Controllers
             this.context=context;
         }
 
-        [HttpGet]
+        [HttpGet] //api/autores
+        [HttpGet("listado")] //api/autores/listado
+        [HttpGet("/listado")] //listado
         public async Task<ActionResult<List<Author>>> Get()
         {
             return await context.Authors.Include(opt=> opt.Books).ToListAsync();
+        }
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<Author>> GetById(int id)
+        {
+            return await context.Authors.FirstOrDefaultAsync(x => x.Id == id);
+        }
+        [HttpGet("{name}")]
+        public async Task<ActionResult<List<Author>>> GetByName(string name)
+        {
+            return await context.Authors.Where(x => x.Name.Contains(name)).ToListAsync();
+        }
+        [HttpGet("first")] 
+        public async Task<ActionResult<Author>> GetFirst()
+        {
+            return await context.Authors.Include(opt=>opt.Books).FirstOrDefaultAsync();
         }
         [HttpPost]
         public async Task<ActionResult>Post(Author author)
