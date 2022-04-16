@@ -48,7 +48,7 @@ namespace WebApiAuthors.Controllers
             return Ok();
         }
         [HttpPut("${id:int}")] //api/authors/1
-        public async Task<ActionResult>Put(Author author,int id)
+        public async Task<ActionResult>Put(Author author,[FromHeader] int id)
         {
             var exist = await context.Authors.AnyAsync(x => x.Id == id);
             if (!exist)
