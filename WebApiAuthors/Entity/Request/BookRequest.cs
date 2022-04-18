@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApiAuthors.Entity
+namespace WebApiAuthors.DTOS
 {
-    public class Book
+    public class BookRequest
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public int AuthorId { get; set; }
+
     }
 }

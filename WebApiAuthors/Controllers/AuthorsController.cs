@@ -1,29 +1,35 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApiAuthors.DTOS;
 using WebApiAuthors.Entity;
 
 namespace WebApiAuthors.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
-    public class AuthorsController:ControllerBase
+    [Route("api/[controller]")]    public class AuthorsController:ControllerBase
     {
         private ApplicationDbContext context;
-        public AuthorsController(ApplicationDbContext context)
+        private readonly IMapper mapper;
+
+        public AuthorsController(ApplicationDbContext context,IMapper mapper)
         {
             this.context=context;
+            this.mapper = mapper;
         }
 
         [HttpGet] //api/autores
-        [HttpGet("listado")] //api/autores/listado
-        [HttpGet("/listado")] //listado
-        public async Task<ActionResult<List<Author>>> Get()
+        //[HttpGet("listado")] //api/autores/listado
+        //[HttpGet("/listado")] //listado
+        public async Task<ActionResult<List<AuthorResponse>>> Get()
         {
-            return await context.Authors.Include(opt=> opt.Books).ToListAsync();
+            var result = await context.Authors.Include(opt => opt.Books).ToListAsync();
+            return mapper.Map<List<AuthorResponse>>(result);
         }
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Author>> GetById(int id)
@@ -41,9 +47,10 @@ namespace WebApiAuthors.Controllers
             return await context.Authors.Include(opt=>opt.Books).FirstOrDefaultAsync();
         }
         [HttpPost]
-        public async Task<ActionResult>Post(Author author)
+        public async Task<ActionResult>Post(AuthorRequest author)
         {
-            context.Add(author);
+            var data = mapper.Map<Author>(author);
+            context.Add(data);
             await context.SaveChangesAsync();
             return Ok();
         }

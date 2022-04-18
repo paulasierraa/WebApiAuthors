@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApiAuthors.DTOS;
 using WebApiAuthors.Entity;
 
 namespace WebApiAuthors.Controllers
@@ -13,19 +15,24 @@ namespace WebApiAuthors.Controllers
     public class BookController:ControllerBase
     {
         private ApplicationDbContext context;
-        public BookController(ApplicationDbContext context)
+        private readonly IMapper mapper;
+
+        public BookController(ApplicationDbContext context,IMapper mapper)
         {
             this.context = context;
+            this.mapper = mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<List<Book>>> Get()
+        public async Task<ActionResult<List<BookResponse>>> Get()
         {
-            return await context.Books.ToListAsync();
+            var response = await context.Books.ToListAsync();
+            return mapper.Map<List<BookResponse>>(response);
         }
         [HttpPost]
-        public async Task<ActionResult> Post(Book book)
+        public async Task<ActionResult> Post(BookRequest book)
         {
-            context.Add(book);
+            var data = mapper.Map<Book>(book);
+            context.Add(data);
             await context.SaveChangesAsync();
             return Ok(); 
         }
