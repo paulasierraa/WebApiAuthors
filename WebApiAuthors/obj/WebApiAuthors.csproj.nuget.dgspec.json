@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Mis Archivos\\Cursos\\.NET\\WebApiAuthors\\WebApiAuthors\\WebApiAuthors.csproj": {}
+    "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors\\WebApiAuthors.csproj": {}
   },
   "projects": {
-    "C:\\Mis Archivos\\Cursos\\.NET\\WebApiAuthors\\WebApiAuthors\\WebApiAuthors.csproj": {
+    "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors\\WebApiAuthors.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Mis Archivos\\Cursos\\.NET\\WebApiAuthors\\WebApiAuthors\\WebApiAuthors.csproj",
+        "projectUniqueName": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors\\WebApiAuthors.csproj",
         "projectName": "WebApiAuthors",
-        "projectPath": "C:\\Mis Archivos\\Cursos\\.NET\\WebApiAuthors\\WebApiAuthors\\WebApiAuthors.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Mis Archivos\\Cursos\\.NET\\WebApiAuthors\\WebApiAuthors\\obj\\",
+        "projectPath": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors\\WebApiAuthors.csproj",
+        "packagesPath": "C:\\Users\\paula\\.nuget\\packages\\",
+        "outputPath": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -44,6 +46,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.15, )"
@@ -81,7 +91,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
+>>>>>>> 5a3ca5f9a5bee029230a363fb292eecd2db6bc28
         }
       }
     }

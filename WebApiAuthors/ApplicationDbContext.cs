@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApiAuthors.Entity;
+using WebApiAuthors.Entity.Base;
 
 namespace WebApiAuthors
 {
@@ -17,6 +18,8 @@ namespace WebApiAuthors
         public DbSet<Author> Authors { get; set; }
 
         public DbSet<Book> Books { get; set; }
+
+        public DbSet<Comment> Comments { get; set; }
 
         public static implicit operator ControllerContext(ApplicationDbContext v)
         {
