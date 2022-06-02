@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Yt5NT+1tZ89Qtqk4V+U+D2HEOxsQxzG6Nmx8ZqV+d7nRf60Idr9cbMBsubgskhhTGfRJohJ8tcX5ckkJa8/JZQ==",
+  "dgSpecHash": "h6k8c7mlIJRQFX9S7V+uhDWY0ewD9hrmQOQBGpZEHQ0GTAfw0yPSqVcx+QdyFbgXeFveIvzxSS/VCI1HQAYcGA==",
   "success": true,
   "projectFilePath": "C:\\Mis Archivos\\Cursos\\.NET\\WebApiAuthors\\WebApiAuthors\\WebApiAuthors.csproj",
   "expectedPackageFiles": [
@@ -106,8 +106,7 @@
     "C:\\Users\\Asus\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\Asus\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
