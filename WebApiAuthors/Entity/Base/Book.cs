@@ -14,6 +14,7 @@ namespace WebApiAuthors.Entity
         public string Title { get; set; }
         public int AuthorId { get; set; }
 
+        public Author Author{get;set;}
         public List<Comment> Comments { get; set; }
     }
 }

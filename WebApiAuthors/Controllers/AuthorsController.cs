@@ -12,7 +12,8 @@ using WebApiAuthors.Entity;
 namespace WebApiAuthors.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]    public class AuthorsController:ControllerBase
+    [Route("api/[controller]")] 
+    public class AuthorsController:ControllerBase
     {
         private ApplicationDbContext context;
         private readonly IMapper mapper;
@@ -31,6 +32,12 @@ namespace WebApiAuthors.Controllers
             var result = await context.Authors.Include(opt => opt.Books).ToListAsync();
             return mapper.Map<List<AuthorResponse>>(result);
         }
+        [HttpGet("NoAsync")] //listado
+        public List<AuthorResponse> GetNoAsync()
+        {
+            var result = context.Authors.Include(opt => opt.Books).ToList();
+            return mapper.Map<List<AuthorResponse>>(result);
+        }
         [HttpGet("{id:int}")]
         public async Task<ActionResult<Author>> GetById(int id)
         {
@@ -47,7 +54,7 @@ namespace WebApiAuthors.Controllers
             return await context.Authors.Include(opt=>opt.Books).FirstOrDefaultAsync();
         }
         [HttpPost]
-        public async Task<ActionResult>Post(AuthorRequest author)
+        public async Task<ActionResult>Post([FromBody] AuthorRequest author)
         {
             var data = mapper.Map<Author>(author);
             context.Add(data);
