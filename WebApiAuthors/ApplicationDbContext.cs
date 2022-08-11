@@ -15,11 +15,20 @@ namespace WebApiAuthors
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            //estableciendo llaves compuestas
+            modelBuilder.Entity<AuthorBooks>()
+                .HasKey(al => new { al.AuthorId, al.BookId });
+        }
         public DbSet<Author> Authors { get; set; }
 
         public DbSet<Book> Books { get; set; }
 
         public DbSet<Comment> Comments { get; set; }
+
+        public DbSet<AuthorBooks> AuthorBook { get; set; }
 
         public static implicit operator ControllerContext(ApplicationDbContext v)
         {

@@ -28,7 +28,7 @@ namespace WebApiAuthors.Controllers
         //[HttpGet("/listado")] //listado
         public async Task<ActionResult<List<AuthorResponse>>> Get()
         {
-            var result = await context.Authors.Include(opt => opt.Books).ToListAsync();
+            var result = await context.Authors.ToListAsync();
             return mapper.Map<List<AuthorResponse>>(result);
         }
         [HttpGet("{id:int}")]
@@ -44,7 +44,7 @@ namespace WebApiAuthors.Controllers
         [HttpGet("first")] 
         public async Task<ActionResult<Author>> GetFirst()
         {
-            return await context.Authors.Include(opt=>opt.Books).FirstOrDefaultAsync();
+            return await context.Authors.FirstOrDefaultAsync();
         }
         [HttpPost]
         public async Task<ActionResult>Post(AuthorRequest author)

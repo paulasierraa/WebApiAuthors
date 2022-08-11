@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApiAuthors.Entity.Base;
 using WebApiAuthors.Validators;
 
 namespace WebApiAuthors.Entity
@@ -15,8 +16,7 @@ namespace WebApiAuthors.Entity
         [FirstUpper]
         public string Name { get; set; }
 
-        public List<Book> Books { get; set; }
-
+        public List<AuthorBooks> AuthorsBooks { get; set; }
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
             if (string.IsNullOrEmpty(Name))

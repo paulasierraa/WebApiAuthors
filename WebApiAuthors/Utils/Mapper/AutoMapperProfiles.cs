@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApiAuthors.DTOS;
 using WebApiAuthors.Entity;
+using WebApiAuthors.Entity.Base;
+using WebApiAuthors.Entity.Request;
+using WebApiAuthors.Entity.Response;
 
 namespace WebApiAuthors.Utils.Mapper
 {
@@ -17,6 +20,9 @@ namespace WebApiAuthors.Utils.Mapper
 
             CreateMap<BookRequest, Book>();
             CreateMap<Book, BookResponse>();
+
+            CreateMap<CommentRequest, Comment>();
+            CreateMap<Comment, CommentResponse>();
         }
     }
 }
