@@ -28,19 +28,22 @@ namespace WebApiAuthors.Business.Services.Generic
             this.repository = repository;
         }
 
-        public EntityBase Create(EntityRequest request)
+        public GenericResponse<EntityBase> Create(EntityRequest request)
         {
+            GenericResponse<EntityBase> response = new GenericResponse<EntityBase>();
             try
             {
-               return  this.repository.Create(request);
+               response.Content = this.repository.Create(request);
+               response.Status = StatusCode.Ok;
+               response.Message = ResponseMessages.SUCCESFUL_CREATE;
             }
             catch (Exception)
             {
-
-                throw;
+                response.Content = null;
+                response.Status = StatusCode.InternalServerError;
+                response.Message = ResponseMessages.INTERNAL_SERVER_ERROR;
             }
-            
-            throw new NotImplementedException();
+            return response;
         }
 
         public async Task<GenericResponse<EntityBase>> CreateAsync(EntityRequest request)
@@ -50,70 +53,89 @@ namespace WebApiAuthors.Business.Services.Generic
             {
                 response.Content = await this.repository.CreateAsync(request);
                 response.Status = StatusCode.Ok;
-                response.Message = "Datos creados con éxito";
+                response.Message = ResponseMessages.SUCCESFUL_CREATE;
             }
             catch(Exception e)
             {
-                response.Message = "Error en la creación";
+                response.Message = ResponseMessages.INTERNAL_SERVER_ERROR;
                 response.Status = StatusCode.InternalServerError;
+                response.Content = null;
             }
             return response;
         }
 
-        public void Delete(EntityRequest request)
+        public GenericResponse<bool> Delete(EntityRequest request)
         {
+            GenericResponse<bool> response = new GenericResponse<bool>();
             try
             {
-
+                this.repository.Delete(request);
+                response.Content = true;
+                response.Status = StatusCode.Ok;
+                response.Message = ResponseMessages.SUCCESFUL_DELETE;
             }
             catch (Exception)
             {
-
-                throw;
+                response.Content = false;
+                response.Status = StatusCode.InternalServerError;
+                response.Message = ResponseMessages.INTERNAL_SERVER_ERROR;
             }
-            throw new NotImplementedException();
+            return response;
         }
 
-        public EntityBase Edit(IEnumerable<EntityRequest> request)
+        public GenericResponse<EntityBase> Edit(EntityRequest request)
         {
+            GenericResponse<EntityBase> response = new GenericResponse<EntityBase>();
             try
             {
-
+                response.Content = this.repository.Edit(request);
+                response.Status = StatusCode.Ok;
+                response.Message = ResponseMessages.SUCCESFUL_EDIT;
             }
             catch (Exception)
             {
-
-                throw;
+                response.Content = null;
+                response.Status = StatusCode.InternalServerError;
+                response.Message = ResponseMessages.INTERNAL_SERVER_ERROR;
             }
-            throw new NotImplementedException();
+            return response;
         }
 
-        public Task<EntityBase> EditAsync(IEnumerable<EntityRequest> request)
+        public async Task<GenericResponse<EntityBase>> EditAsync(EntityRequest request)
         {
+            GenericResponse<EntityBase> response = new GenericResponse<EntityBase>();
             try
             {
-
+                response.Content = await this.repository.EditAsync(request);
+                response.Status = StatusCode.Ok;
+                response.Message = ResponseMessages.SUCCESFUL_EDIT;
             }
             catch (Exception)
             {
-
-                throw;
+                response.Content = null;
+                response.Status = StatusCode.InternalServerError;
+                response.Message = ResponseMessages.INTERNAL_SERVER_ERROR;
             }
-            throw new NotImplementedException();
+            return response;
         }
 
-        public Task<IEnumerable<EntityBase>> GetAll()
+        public async Task<GenericResponse<IEnumerable<EntityBase>>> GetAll()
         {
+            GenericResponse<IEnumerable<EntityBase>> response = new GenericResponse<IEnumerable<EntityBase>>();
             try
             {
-
+                var listAux = await this.repository.GetAll();
+                response.Content =listAux.ToList();
+                response.Status = StatusCode.Ok;
+                response.Message = ResponseMessages.SUCCESFUL_GET;
             }
             catch (Exception)
             {
-
-                throw;
+                response.Content = null;
+                response.Status = StatusCode.InternalServerError;
+                response.Message = ResponseMessages.INTERNAL_SERVER_ERROR;
             }
-            throw new NotImplementedException();
+            return response;
         }
     }
 }

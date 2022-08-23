@@ -9,3 +9,9 @@ D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.dll
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\obj\Debug\net6.0\ref\WebApiAuthors.Data.dll
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.pdb
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.csproj.AssemblyReference.cache
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Data.runtimeconfig.json
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Domain.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Domain.pdb
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.csproj.CopyComplete
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.genruntimeconfig.cache

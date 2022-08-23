@@ -14,11 +14,11 @@ namespace WebApiAuthors.Data.Repositories.IGenericRepository
     {
         Task<EntityBase> CreateAsync(EntityRequest request);
         Task<EntityBase> CreateMultipleAsync(IEnumerable<EntityRequest> request);
-        Task<EntityBase> EditAsync(IEnumerable<EntityRequest> request);
+        Task<EntityBase> EditAsync(EntityRequest request);
 
         EntityBase Create(EntityRequest request);
         EntityBase CreateMultiple(IEnumerable<EntityRequest> request);
-        EntityBase Edit(IEnumerable<EntityRequest> request);
+        EntityBase Edit(EntityRequest request);
         public void Delete(EntityRequest request);
 
         /*Search*/

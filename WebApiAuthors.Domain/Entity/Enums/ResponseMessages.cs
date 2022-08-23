@@ -10,6 +10,8 @@ namespace WebApiAuthors.Domain.Entity.Enums
     {
         public static string SUCCESFUL_CREATE = "Datos creados con éxito";
         public static string SUCCESFUL_EDIT = "Datos editados con éxito";
+        public static string SUCCESFUL_DELETE = "Datos eliminados con éxito";
         public static string INTERNAL_SERVER_ERROR = "Error en el servidor";
+        public static string SUCCESFUL_GET = "Datos recuperados con éxito";
     }
 }

@@ -126,3 +126,12 @@ D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\obj\Debug\net6.0\scopedcss\bundle\WebApiAuthors.styles.css
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\obj\Debug\net6.0\WebApiAuthors.csproj.CopyComplete
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\obj\Debug\net6.0\WebApiAuthors.genruntimeconfig.cache
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\System.Web.Mvc.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\System.Web.Razor.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\System.Web.Helpers.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\System.Web.WebPages.Deployment.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\System.Web.WebPages.Razor.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\System.Web.WebPages.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\WebApiAuthors.Domain.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\WebApiAuthors.Domain.pdb

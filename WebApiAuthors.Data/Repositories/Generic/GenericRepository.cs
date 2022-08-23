@@ -7,6 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using WebApiAuthors.Data.Repositories.IGenericRepository;
+using WebApiAuthors.Domain.Context;
 
 namespace WebApiAuthors.Data.GenericRepository
 {
@@ -61,7 +62,7 @@ namespace WebApiAuthors.Data.GenericRepository
 
         }
 
-        public EntityBase Edit(IEnumerable<EntityRequest> request)
+        public EntityBase Edit(EntityRequest request)
         {
             EntityBase dataToEdit = mapper.Map<EntityBase>(request);
             this.dbSet.Update(dataToEdit);
@@ -69,7 +70,7 @@ namespace WebApiAuthors.Data.GenericRepository
             return dataToEdit;
         }
 
-        public async Task<EntityBase> EditAsync(IEnumerable<EntityRequest> request)
+        public async Task<EntityBase> EditAsync(EntityRequest request)
         {
             EntityBase dataToEdit = mapper.Map<EntityBase>(request);
             this.dbSet.Update(dataToEdit);

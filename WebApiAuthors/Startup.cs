@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using WebApiAuthors.Domain.Context;
 using WebApiAuthors.Middlewares;
 
 namespace WebApiAuthors
@@ -61,7 +62,7 @@ namespace WebApiAuthors
             //        await contexto.Response.WriteAsync("Estoy interceptando la tubería");
             //    });
             //}); 
-            app.UseLogHttpResponse();
+            //app.UseLogHttpResponse();
 
             if (env.IsDevelopment())
             {

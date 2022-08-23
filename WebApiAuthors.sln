@@ -4,15 +4,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiAuthors", "WebApiAuthors\WebApiAuthors.csproj", "{04DA7B2E-B2C2-4EDC-88EB-698BB85985E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{66E0414D-3538-48A9-87AB-F9F88B80DD73} = {66E0414D-3538-48A9-87AB-F9F88B80DD73}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAuthors.Data", "WebApiAuthors.Data\WebApiAuthors.Data.csproj", "{1A95B1A3-1128-4761-87F0-9ACCE07605E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiAuthors.Data", "WebApiAuthors.Data\WebApiAuthors.Data.csproj", "{1A95B1A3-1128-4761-87F0-9ACCE07605E8}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4B83A5A0-A11F-4D3A-B026-91238DD3084C} = {4B83A5A0-A11F-4D3A-B026-91238DD3084C}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAuthors.Domain", "WebApiAuthors.Domain\WebApiAuthors.Domain.csproj", "{4B83A5A0-A11F-4D3A-B026-91238DD3084C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiAuthors.Domain", "WebApiAuthors.Domain\WebApiAuthors.Domain.csproj", "{4B83A5A0-A11F-4D3A-B026-91238DD3084C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiAuthors.Business", "WebApiAuthors.Business\WebApiAuthors.Business.csproj", "{66E0414D-3538-48A9-87AB-F9F88B80DD73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiAuthors.Business", "WebApiAuthors.Business\WebApiAuthors.Business.csproj", "{66E0414D-3538-48A9-87AB-F9F88B80DD73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

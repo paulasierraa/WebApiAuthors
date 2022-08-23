@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApiAuthors.Entity;
 using WebApiAuthors.Entity.Base;
 
-namespace WebApiAuthors
+namespace WebApiAuthors.Domain.Context
 {
     public class ApplicationDbContext:DbContext
     {
@@ -30,9 +26,5 @@ namespace WebApiAuthors
 
         public DbSet<AuthorBooks> AuthorBook { get; set; }
 
-        public static implicit operator ControllerContext(ApplicationDbContext v)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

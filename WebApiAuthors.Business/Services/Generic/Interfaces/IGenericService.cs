@@ -17,12 +17,12 @@ namespace WebApiAuthors.Business.Services.Interfaces
     {
         TRepository Repository { get; set; }
         Task<GenericResponse<EntityBase>> CreateAsync(EntityRequest request);
-        Task<EntityBase> EditAsync(IEnumerable<EntityRequest> request);
-        EntityBase Create(EntityRequest request);
-        EntityBase Edit(IEnumerable<EntityRequest> request);
-        public void Delete(EntityRequest request);
+        Task<GenericResponse<EntityBase>> EditAsync(EntityRequest request);
+        GenericResponse<EntityBase> Create(EntityRequest request);
+        GenericResponse<EntityBase> Edit(EntityRequest request);
+        public GenericResponse<bool> Delete(EntityRequest request);
 
         /*Search*/
-        Task<IEnumerable<EntityBase>> GetAll();
+        Task<GenericResponse<IEnumerable<EntityBase>>> GetAll();
     }
 }
