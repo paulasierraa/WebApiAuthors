@@ -13,7 +13,8 @@ namespace WebApiAuthors.Entity
         [Required]
         public string Title { get; set; }
         public int AuthorId { get; set; }
-        public List<AuthorBooks> AuthorsBooks { get; set; }
 
+        public Author Author{get;set;}
+        public List<Comment> Comments { get; set; }
     }
 }

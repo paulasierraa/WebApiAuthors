@@ -1,0 +1,11 @@
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\bin\Debug\net6.0\WebApiAuthors.Domain.deps.json
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\bin\Debug\net6.0\WebApiAuthors.Domain.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\bin\Debug\net6.0\ref\WebApiAuthors.Domain.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\bin\Debug\net6.0\WebApiAuthors.Domain.pdb
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\obj\Debug\net6.0\WebApiAuthors.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\obj\Debug\net6.0\WebApiAuthors.Domain.AssemblyInfoInputs.cache
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\obj\Debug\net6.0\WebApiAuthors.Domain.AssemblyInfo.cs
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\obj\Debug\net6.0\WebApiAuthors.Domain.csproj.CoreCompileInputs.cache
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\obj\Debug\net6.0\WebApiAuthors.Domain.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\obj\Debug\net6.0\ref\WebApiAuthors.Domain.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Domain\obj\Debug\net6.0\WebApiAuthors.Domain.pdb

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebApiAuthors.Business/1.0.0": {
+        "runtime": {
+          "WebApiAuthors.Business.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApiAuthors.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
