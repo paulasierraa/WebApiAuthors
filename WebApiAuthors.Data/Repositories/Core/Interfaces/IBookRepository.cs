@@ -9,8 +9,7 @@ using WebApiAuthors.Entity;
 
 namespace WebApiAuthors.Data.Repositories.Core.Interfaces
 {
-    public interface IAuthorRepository:IGenericRepository<Author,AuthorRequest,AuthorResponse>
+    public interface IBookRepository:IGenericRepository<Book,BookRequest,BookResponse>
     {
-
     }
 }

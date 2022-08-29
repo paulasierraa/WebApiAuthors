@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebApiAuthors.Data.Repositories.IGenericRepository;
-using WebApiAuthors.DTOS;
-using WebApiAuthors.Entity;
+using WebApiAuthors.Entity.Base;
+using WebApiAuthors.Entity.Request;
+using WebApiAuthors.Entity.Response;
 
 namespace WebApiAuthors.Data.Repositories.Core.Interfaces
 {
-    public interface IAuthorRepository:IGenericRepository<Author,AuthorRequest,AuthorResponse>
+    public interface ICommentRepository:IGenericRepository<Comment,CommentRequest,CommentResponse>
     {
-
     }
 }

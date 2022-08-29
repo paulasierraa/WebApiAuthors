@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using WebApiAuthors.Data;
 using WebApiAuthors.Domain.Context;
 using WebApiAuthors.Middlewares;
 
@@ -32,7 +33,8 @@ namespace WebApiAuthors
             ));
 
 
-          //  services.AddTransient<ActionFilter>;
+            services.AddRepositoryExtensions(Configuration);
+            //  services.AddTransient<ActionFilter>;
             //servicios de caché
             services.AddResponseCaching();
             //servicios de autenticación

@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 using WebApiAuthors.Data.GenericRepository;
 using WebApiAuthors.Data.Repositories.Core.Interfaces;
 using WebApiAuthors.Domain.Context;
-using WebApiAuthors.DTOS;
-using WebApiAuthors.Entity;
+using WebApiAuthors.Entity.Base;
+using WebApiAuthors.Entity.Request;
+using WebApiAuthors.Entity.Response;
 
 namespace WebApiAuthors.Data.Repositories.Core
 {
-    public class AuthorRepository:GenericRepository<Author,AuthorRequest,AuthorResponse>,IAuthorRepository
+    public class CommentRepository: GenericRepository<Comment, CommentRequest, CommentResponse>,ICommentRepository
     {
-        public AuthorRepository(ApplicationDbContext context,IMapper mapper):base(context,mapper)
+        public CommentRepository(ApplicationDbContext context,IMapper mapper):base(context,mapper)
         {
         }
     }

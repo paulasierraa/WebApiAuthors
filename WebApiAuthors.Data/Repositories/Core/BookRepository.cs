@@ -12,10 +12,11 @@ using WebApiAuthors.Entity;
 
 namespace WebApiAuthors.Data.Repositories.Core
 {
-    public class AuthorRepository:GenericRepository<Author,AuthorRequest,AuthorResponse>,IAuthorRepository
+    public class BookRepository:GenericRepository<Book,BookRequest,BookResponse>,IBookRepository
     {
-        public AuthorRepository(ApplicationDbContext context,IMapper mapper):base(context,mapper)
+        public BookRepository(ApplicationDbContext context,IMapper mapper):base(context,mapper)
         {
+
         }
     }
 }
