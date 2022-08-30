@@ -1678,6 +1678,23 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "WebApiAuthors.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
+          "WebApiAuthors.Data": "1.0.0",
+          "WebApiAuthors.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/WebApiAuthors.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebApiAuthors.Business.dll": {}
+        }
+      },
       "WebApiAuthors.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -5897,6 +5914,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "WebApiAuthors.Business/1.0.0": {
+      "type": "project",
+      "path": "../WebApiAuthors.Business/WebApiAuthors.Business.csproj",
+      "msbuildProject": "../WebApiAuthors.Business/WebApiAuthors.Business.csproj"
+    },
     "WebApiAuthors.Data/1.0.0": {
       "type": "project",
       "path": "../WebApiAuthors.Data/WebApiAuthors.Data.csproj",
@@ -5915,6 +5937,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.7",
       "Swashbuckle.AspNetCore >= 6.4.0",
+      "WebApiAuthors.Business >= 1.0.0",
       "WebApiAuthors.Data >= 1.0.0",
       "WebApiAuthors.Domain >= 1.0.0"
     ]
@@ -5951,6 +5974,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Business\\WebApiAuthors.Business.csproj": {
+              "projectPath": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Business\\WebApiAuthors.Business.csproj"
+            },
             "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Data\\WebApiAuthors.Data.csproj": {
               "projectPath": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Data\\WebApiAuthors.Data.csproj"
             },

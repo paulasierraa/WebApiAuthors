@@ -59,23 +59,20 @@ namespace WebApiAuthors.Data.GenericRepository
             EntityBase dataToDelete = mapper.Map<EntityBase>(request);
             this.dbSet.Remove(dataToDelete);
             this.context.SaveChanges();
-
         }
 
-        public EntityBase Edit(EntityRequest request)
+        public EntityBase Edit(EntityBase request)
         {
-            EntityBase dataToEdit = mapper.Map<EntityBase>(request);
-            this.dbSet.Update(dataToEdit);
+            this.dbSet.Update(request);
             this.context.SaveChanges();
-            return dataToEdit;
+            return request;
         }
 
-        public async Task<EntityBase> EditAsync(EntityRequest request)
+        public async Task<EntityBase> EditAsync(EntityBase request)
         {
-            EntityBase dataToEdit = mapper.Map<EntityBase>(request);
-            this.dbSet.Update(dataToEdit);
+            this.dbSet.Update(request);
             await this.context.SaveChangesAsync();
-            return dataToEdit;
+            return request;
         }
 
         public async Task<IEnumerable<EntityBase>> GetAll()

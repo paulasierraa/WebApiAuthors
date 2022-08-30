@@ -17,9 +17,9 @@ namespace WebApiAuthors.Business.Services.Interfaces
     {
         TRepository Repository { get; set; }
         Task<GenericResponse<EntityBase>> CreateAsync(EntityRequest request);
-        Task<GenericResponse<EntityBase>> EditAsync(EntityRequest request);
+        Task<GenericResponse<EntityBase>> EditAsync(EntityBase request);
         GenericResponse<EntityBase> Create(EntityRequest request);
-        GenericResponse<EntityBase> Edit(EntityRequest request);
+        GenericResponse<EntityBase> Edit(EntityBase request);
         public GenericResponse<bool> Delete(EntityRequest request);
 
         /*Search*/

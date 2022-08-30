@@ -83,7 +83,7 @@ namespace WebApiAuthors.Business.Services.Generic
             return response;
         }
 
-        public GenericResponse<EntityBase> Edit(EntityRequest request)
+        public GenericResponse<EntityBase> Edit(EntityBase request)
         {
             GenericResponse<EntityBase> response = new GenericResponse<EntityBase>();
             try
@@ -101,7 +101,7 @@ namespace WebApiAuthors.Business.Services.Generic
             return response;
         }
 
-        public async Task<GenericResponse<EntityBase>> EditAsync(EntityRequest request)
+        public async Task<GenericResponse<EntityBase>> EditAsync(EntityBase request)
         {
             GenericResponse<EntityBase> response = new GenericResponse<EntityBase>();
             try

@@ -135,3 +135,10 @@ D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\Microsoft.Web.Infrastructure.dll
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\WebApiAuthors.Domain.dll
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\WebApiAuthors.Domain.pdb
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\WebApiAuthors.Data.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\WebApiAuthors.Data.pdb
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\WebApiAuthors.Business.dll
+D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors\bin\Debug\net6.0\WebApiAuthors.Business.pdb

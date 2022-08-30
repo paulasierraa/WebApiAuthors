@@ -17,6 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebApiAuthors.Business\WebApiAuthors.Business.csproj" />
+    <ProjectReference Include="..\WebApiAuthors.Data\WebApiAuthors.Data.csproj" />
     <ProjectReference Include="..\WebApiAuthors.Domain\WebApiAuthors.Domain.csproj" />
   </ItemGroup>
 

@@ -6,9 +6,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using WebApiAuthors.Business.Services;
 using WebApiAuthors.Data;
 using WebApiAuthors.Domain.Context;
 using WebApiAuthors.Middlewares;
+using WebApiAuthors.Utils.Mapper;
 
 namespace WebApiAuthors
 {
@@ -32,8 +34,9 @@ namespace WebApiAuthors
                 Configuration.GetConnectionString("defaultConnection")    
             ));
 
-
             services.AddRepositoryExtensions(Configuration);
+            services.AddServiceExtensions(Configuration);
+
             //  services.AddTransient<ActionFilter>;
             //servicios de caché
             services.AddResponseCaching();
@@ -44,7 +47,7 @@ namespace WebApiAuthors
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApiAuthors", Version = "v1" });
             });
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(AutoMapperProfiles));
 
         }
 
