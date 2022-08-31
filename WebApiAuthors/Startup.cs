@@ -1,11 +1,14 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using System.IO;
 using WebApiAuthors.Business.Services;
 using WebApiAuthors.Data;
 using WebApiAuthors.Domain.Context;
@@ -52,31 +55,38 @@ namespace WebApiAuthors
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILogger<Startup>logger)
         {
-            //se ejecuta siempre
-            //app.Run(async contexto => {
-            //    await contexto.Response.WriteAsync("Estoy interceptando la tubería");
-            //});
+            app.Use(async (context,next)=> {
+                using(var ms = new MemoryStream())
+                {
+                    var originalBody = context.Response.Body;
+                    context.Response.Body = ms;
+                    await next.Invoke();
 
-            //intercepta cierta ruta
-            //app.Map("/ruta1", app =>
-            //{
-            //    app.Run(async contexto =>
-            //    {
-            //        await contexto.Response.WriteAsync("Estoy interceptando la tubería");
-            //    });
-            //}); 
-            //app.UseLogHttpResponse();
-
+                    ms.Seek(0, SeekOrigin.Begin);
+                    string response = new StreamReader(ms).ReadToEnd();
+                    ms.Seek(0, SeekOrigin.Begin);
+                    await ms.CopyToAsync(originalBody);
+                    context.Response.Body = originalBody;
+                    logger.LogInformation(response);
+                }
+            });
+            /*Middleware para ruta específica*/
+            app.Map("/ruta1", app =>
+             {
+                app.Run(async contexto =>
+                {
+                    await contexto.Response.WriteAsync("Intercepción tubería");
+                
+                });
+            });
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApiAuthors v1"));
             }
-
- 
 
             app.UseHttpsRedirection();
 

@@ -13,7 +13,10 @@ namespace WebApiAuthors
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+           var builder =  CreateHostBuilder(args);
+           var app = builder.Build();
+           var loggerServices = (ILogger<Startup>)app.Services.GetService(typeof(ILogger<Startup>));
+            app.Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
