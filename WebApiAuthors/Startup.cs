@@ -11,7 +11,9 @@ using Microsoft.OpenApi.Models;
 using System.IO;
 using WebApiAuthors.Business.Services;
 using WebApiAuthors.Data;
+using WebApiAuthors.Domain;
 using WebApiAuthors.Domain.Context;
+using WebApiAuthors.Domain.Filters;
 using WebApiAuthors.Middlewares;
 using WebApiAuthors.Utils.Mapper;
 
@@ -30,7 +32,10 @@ namespace WebApiAuthors
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers(options=>
+            {
+                options.Filters.Add(typeof(ExceptionFilter));
+            });
 
             services.AddDbContext<ApplicationDbContext>(options  => 
                 options.UseSqlServer(
@@ -39,10 +44,9 @@ namespace WebApiAuthors
 
             services.AddRepositoryExtensions(Configuration);
             services.AddServiceExtensions(Configuration);
-
-            //  services.AddTransient<ActionFilter>;
+            services.AddDomainExtensions(Configuration);
             //servicios de caché
-            services.AddResponseCaching();
+            //services.AddResponseCaching();
             //servicios de autenticación
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 
@@ -57,21 +61,6 @@ namespace WebApiAuthors
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env,ILogger<Startup>logger)
         {
-            app.Use(async (context,next)=> {
-                using(var ms = new MemoryStream())
-                {
-                    var originalBody = context.Response.Body;
-                    context.Response.Body = ms;
-                    await next.Invoke();
-
-                    ms.Seek(0, SeekOrigin.Begin);
-                    string response = new StreamReader(ms).ReadToEnd();
-                    ms.Seek(0, SeekOrigin.Begin);
-                    await ms.CopyToAsync(originalBody);
-                    context.Response.Body = originalBody;
-                    logger.LogInformation(response);
-                }
-            });
             /*Middleware para ruta específica*/
             app.Map("/ruta1", app =>
              {
@@ -81,6 +70,8 @@ namespace WebApiAuthors
                 
                 });
             });
+            app.UseLogHttpResponse();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -92,7 +83,7 @@ namespace WebApiAuthors
 
             app.UseRouting();
 
-            //caché
+            //caché  filter
             app.UseResponseCaching();
 
             app.UseAuthorization();

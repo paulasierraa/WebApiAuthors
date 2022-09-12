@@ -17,6 +17,7 @@ namespace WebApiAuthors.Business.Services
             services.AddTransient<IAuthorService, AuthorService>();
             services.AddTransient<IBookService, BookService>();
             services.AddTransient<ICommentService, CommentService>();
+            services.AddHostedService<FileService>();
         }
     }
 }

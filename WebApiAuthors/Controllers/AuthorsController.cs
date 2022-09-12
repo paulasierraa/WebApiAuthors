@@ -8,13 +8,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApiAuthors.Business.Services.Core.Interface;
 using WebApiAuthors.Domain.Entity.Response;
+using WebApiAuthors.Domain.Filters;
 using WebApiAuthors.DTOS;
 using WebApiAuthors.Entity;
 
 namespace WebApiAuthors.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")] 
+    [Route("api/[controller]")]
     public class AuthorsController:ControllerBase
     {
         private readonly IAuthorService service;
@@ -24,6 +25,8 @@ namespace WebApiAuthors.Controllers
             this.service = service;
         }
         [HttpGet]
+        //[ResponseCache(Duration =10)]
+        [ServiceFilter(typeof(ActionFilter))]
         public async Task<GenericResponse<IEnumerable<Author>>> GetAll()
         {
            return  await this.service.GetAll();
