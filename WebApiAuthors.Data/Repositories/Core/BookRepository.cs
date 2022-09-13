@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WebApiAuthors.Data.GenericRepository;
 using WebApiAuthors.Data.Repositories.Core.Interfaces;
-using WebApiAuthors.Domain.Context;
+using WebApiAuthors.Data.Context;
 using WebApiAuthors.DTOS;
 using WebApiAuthors.Entity;
 

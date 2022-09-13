@@ -10,5 +10,6 @@ namespace WebApiAuthors.Entity.Response
     {
         public int Id { get; set; }
         public string Content { get; set; }
+        public BookResponse Book { get; set; }
     }
 }

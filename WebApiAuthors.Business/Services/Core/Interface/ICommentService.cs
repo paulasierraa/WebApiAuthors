@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using WebApiAuthors.Business.Services.Interfaces;
 using WebApiAuthors.Data.Repositories.Core.Interfaces;
+using WebApiAuthors.Domain.Entity.Response;
 using WebApiAuthors.Entity.Base;
 using WebApiAuthors.Entity.Request;
 using WebApiAuthors.Entity.Response;
@@ -13,5 +14,6 @@ namespace WebApiAuthors.Business.Services.Core.Interface
 {
     public interface ICommentService : IGenericService<Comment, CommentRequest, CommentResponse, ICommentRepository>
     {
+        Task<GenericResponse<List<CommentResponse>>> GetCommentByBook(int idBook);
     }
 }

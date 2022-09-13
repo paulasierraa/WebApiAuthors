@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using WebApiAuthors.Data.Repositories.IGenericRepository;
-using WebApiAuthors.Domain.Context;
+using WebApiAuthors.Data.Context;
 
 namespace WebApiAuthors.Data.GenericRepository
 {
@@ -17,9 +17,9 @@ namespace WebApiAuthors.Data.GenericRepository
             where EntityRequest : class
             where EntityResponse : class
     {
-        private ApplicationDbContext context;
-        private IMapper mapper;
-        private DbSet<EntityBase> dbSet;
+        public ApplicationDbContext context;
+        public IMapper mapper;
+        public DbSet<EntityBase> dbSet;
 
         public GenericRepository(ApplicationDbContext context,IMapper mapper)
         {

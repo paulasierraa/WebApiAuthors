@@ -15,7 +15,7 @@ namespace WebApiAuthors.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CommentController:ControllerBase
+    public class CommentController : ControllerBase
     {
         private readonly ICommentService service;
 
@@ -27,6 +27,11 @@ namespace WebApiAuthors.Controllers
         public async Task<GenericResponse<IEnumerable<Comment>>> GetAll()
         {
             return await this.service.GetAll();
+        }
+        [HttpGet("{id:int}")]
+        public async Task<GenericResponse<List<CommentResponse>>> GetById(int id)
+        {
+            return await this.service.GetCommentByBook(id);
         }
         [HttpPost]
         public async Task<GenericResponse<Comment>> CreateAsync(CommentRequest request)

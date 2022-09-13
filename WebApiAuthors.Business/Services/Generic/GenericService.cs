@@ -18,11 +18,10 @@ namespace WebApiAuthors.Business.Services.Generic
         where EntityResponse : class
         where TRepository : IGenericRepository<EntityBase, EntityRequest, EntityResponse>
     {
-        private readonly IMapper mapper;
-        private readonly IGenericRepository<EntityBase, EntityRequest, EntityResponse> repository;
+        public IMapper mapper;
+        public TRepository repository;
 
-        public TRepository Repository { get; set; }
-        public GenericService(IMapper mapper,IGenericRepository<EntityBase,EntityRequest,EntityResponse> repository)
+        public GenericService(IMapper mapper, TRepository repository)
         {
             this.mapper = mapper;
             this.repository = repository;

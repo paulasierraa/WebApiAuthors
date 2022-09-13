@@ -15,7 +15,6 @@ namespace WebApiAuthors.Business.Services.Interfaces
         where EntityResponse:class
         where TRepository: IGenericRepository<EntityBase,EntityRequest,EntityResponse>
     {
-        TRepository Repository { get; set; }
         Task<GenericResponse<EntityBase>> CreateAsync(EntityRequest request);
         Task<GenericResponse<EntityBase>> EditAsync(EntityBase request);
         GenericResponse<EntityBase> Create(EntityRequest request);

@@ -11,6 +11,7 @@ namespace WebApiAuthors.Entity
     {
         public int Id { get; set; }
         [Required]
+        [StringLength(maximumLength:250)]
         public string Title { get; set; }
         public int AuthorId { get; set; }
 

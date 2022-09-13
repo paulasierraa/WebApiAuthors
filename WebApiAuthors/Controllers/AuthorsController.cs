@@ -26,7 +26,7 @@ namespace WebApiAuthors.Controllers
         }
         [HttpGet]
         //[ResponseCache(Duration =10)]
-        [ServiceFilter(typeof(ActionFilter))]
+        //[ServiceFilter(typeof(ActionFilter))]
         public async Task<GenericResponse<IEnumerable<Author>>> GetAll()
         {
            return  await this.service.GetAll();

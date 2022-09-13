@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using WebApiAuthors.Entity;
 using WebApiAuthors.Entity.Base;
 
-namespace WebApiAuthors.Domain.Context
+namespace WebApiAuthors.Data.Context
 {
     public class ApplicationDbContext:DbContext
     {

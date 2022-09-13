@@ -12,5 +12,6 @@ namespace WebApiAuthors.Data.Repositories.Core.Interfaces
 {
     public interface ICommentRepository:IGenericRepository<Comment,CommentRequest,CommentResponse>
     {
+        Task<List<CommentResponse>> GetCommentByBook(int idBook);
     }
 }
