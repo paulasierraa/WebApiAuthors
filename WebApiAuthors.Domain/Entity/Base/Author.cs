@@ -15,7 +15,6 @@ namespace WebApiAuthors.Entity
         [StringLength(100,MinimumLength = 3,ErrorMessage ="El campo {0} debe ser de mínimo {2} carácteres")]
         [FirstUpper]
         public string Name { get; set; }
-
         public List<AuthorBooks> AuthorsBooks { get; set; }
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {

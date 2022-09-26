@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using System.IO;
+using System.Text.Json.Serialization;
 using WebApiAuthors.Business.Services;
 using WebApiAuthors.Data;
 using WebApiAuthors.Data.Context;
@@ -32,6 +33,9 @@ namespace WebApiAuthors
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddControllers().AddJsonOptions(x =>
+                x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
             services.AddControllers(options=>
             {
                 options.Filters.Add(typeof(ExceptionFilter));
@@ -45,6 +49,7 @@ namespace WebApiAuthors
             services.AddRepositoryExtensions(Configuration);
             services.AddServiceExtensions(Configuration);
             services.AddDomainExtensions(Configuration);
+
             //servicios de caché
             //services.AddResponseCaching();
             //servicios de autenticación

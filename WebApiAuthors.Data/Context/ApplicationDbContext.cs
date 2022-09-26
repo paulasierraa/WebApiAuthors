@@ -16,7 +16,7 @@ namespace WebApiAuthors.Data.Context
             base.OnModelCreating(modelBuilder);
             //estableciendo llaves compuestas
             modelBuilder.Entity<AuthorBooks>()
-                .HasKey(al => new { al.AuthorId, al.BookId });
+                .HasKey(al => new { al.AuthorId, al.BookId }); 
         }
         public DbSet<Author> Authors { get; set; }
 

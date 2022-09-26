@@ -9,7 +9,7 @@ namespace WebApiAuthors.Entity.Base
     {
         public int BookId { get; set; }
         public int AuthorId { get; set; }
-        public int Order { get; set; }
+        public int Order { get; set; } //determinate author's order
         public Book Book { get; set; }
         public Author Author { get; set; }
     }

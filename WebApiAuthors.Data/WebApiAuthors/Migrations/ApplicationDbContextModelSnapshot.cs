@@ -86,17 +86,12 @@ namespace WebApiAuthors.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("AuthorId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AuthorId");
 
                     b.ToTable("Books");
                 });
@@ -110,7 +105,7 @@ namespace WebApiAuthors.Migrations
                         .IsRequired();
 
                     b.HasOne("WebApiAuthors.Entity.Book", "Book")
-                        .WithMany()
+                        .WithMany("AuthorBooks")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -131,17 +126,6 @@ namespace WebApiAuthors.Migrations
                     b.Navigation("Book");
                 });
 
-            modelBuilder.Entity("WebApiAuthors.Entity.Book", b =>
-                {
-                    b.HasOne("WebApiAuthors.Entity.Author", "Author")
-                        .WithMany()
-                        .HasForeignKey("AuthorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Author");
-                });
-
             modelBuilder.Entity("WebApiAuthors.Entity.Author", b =>
                 {
                     b.Navigation("AuthorsBooks");
@@ -149,6 +133,8 @@ namespace WebApiAuthors.Migrations
 
             modelBuilder.Entity("WebApiAuthors.Entity.Book", b =>
                 {
+                    b.Navigation("AuthorBooks");
+
                     b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618

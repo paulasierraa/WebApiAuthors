@@ -15,3 +15,20 @@ D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Data.pdb
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Domain.pdb
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.csproj.CopyComplete
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Business.deps.json
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Business.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Business.pdb
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Data.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Domain.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Data.pdb
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\bin\Debug\net6.0\WebApiAuthors.Domain.pdb
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.csproj.AssemblyReference.cache
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.AssemblyInfoInputs.cache
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.AssemblyInfo.cs
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.csproj.CoreCompileInputs.cache
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.csproj.CopyComplete
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\refint\WebApiAuthors.Business.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\WebApiAuthors.Business.pdb
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Business\obj\Debug\net6.0\ref\WebApiAuthors.Business.dll

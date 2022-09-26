@@ -5450,6 +5450,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
+      "Microsoft.EntityFrameworkCore >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Abstractions >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.7",
@@ -5457,24 +5458,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\paula\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\PSierraA\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Data\\WebApiAuthors.Data.csproj",
+      "projectUniqueName": "C:\\Users\\PSierraA\\Documents\\Cursos\\WebApiAuthors\\WebApiAuthors.Data\\WebApiAuthors.Data.csproj",
       "projectName": "WebApiAuthors.Data",
-      "projectPath": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Data\\WebApiAuthors.Data.csproj",
-      "packagesPath": "C:\\Users\\paula\\.nuget\\packages\\",
-      "outputPath": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Data\\obj\\",
+      "projectPath": "C:\\Users\\PSierraA\\Documents\\Cursos\\WebApiAuthors\\WebApiAuthors.Data\\WebApiAuthors.Data.csproj",
+      "packagesPath": "C:\\Users\\PSierraA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PSierraA\\Documents\\Cursos\\WebApiAuthors\\WebApiAuthors.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\PSierraA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5482,14 +5482,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://iq-outsourcing.pkgs.visualstudio.com/_packaging/TeamIQ/nuget/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Domain\\WebApiAuthors.Domain.csproj": {
-              "projectPath": "D:\\paula\\Documentos\\1-Mis archivos\\Estudio\\Cursos\\Udemy\\.Net core\\Proyecto-Curso\\WebApiAuthors.Domain\\WebApiAuthors.Domain.csproj"
+            "C:\\Users\\PSierraA\\Documents\\Cursos\\WebApiAuthors\\WebApiAuthors.Domain\\WebApiAuthors.Domain.csproj": {
+              "projectPath": "C:\\Users\\PSierraA\\Documents\\Cursos\\WebApiAuthors\\WebApiAuthors.Domain\\WebApiAuthors.Domain.csproj"
             }
           }
         }
@@ -5507,6 +5508,10 @@
           "Microsoft.AspNetCore.Mvc.Core": {
             "target": "Package",
             "version": "[2.2.5, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[6.0.8, )"
           },
           "Microsoft.EntityFrameworkCore.Abstractions": {
             "target": "Package",
@@ -5538,7 +5543,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   },

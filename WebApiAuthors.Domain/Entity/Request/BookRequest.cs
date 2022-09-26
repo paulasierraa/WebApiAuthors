@@ -8,7 +8,6 @@ namespace WebApiAuthors.DTOS
     public class BookRequest
     {
         public string Title { get; set; }
-        public int AuthorId { get; set; }
-
+        public List<int> AuthorsId { get; set; }
     }
 }

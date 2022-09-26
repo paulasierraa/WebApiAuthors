@@ -15,3 +15,20 @@ D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Domain.pdb
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.csproj.CopyComplete
 D:\paula\Documentos\1-Mis archivos\Estudio\Cursos\Udemy\.Net core\Proyecto-Curso\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.genruntimeconfig.cache
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Data.deps.json
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Data.runtimeconfig.json
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Data.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Data.pdb
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Domain.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\bin\Debug\net6.0\WebApiAuthors.Domain.pdb
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.csproj.AssemblyReference.cache
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.AssemblyInfoInputs.cache
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.AssemblyInfo.cs
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.csproj.CoreCompileInputs.cache
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.csproj.CopyComplete
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\refint\WebApiAuthors.Data.dll
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.pdb
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\WebApiAuthors.Data.genruntimeconfig.cache
+C:\Users\PSierraA\Documents\Cursos\WebApiAuthors\WebApiAuthors.Data\obj\Debug\net6.0\ref\WebApiAuthors.Data.dll

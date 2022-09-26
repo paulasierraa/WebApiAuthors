@@ -13,9 +13,7 @@ namespace WebApiAuthors.Entity
         [Required]
         [StringLength(maximumLength:250)]
         public string Title { get; set; }
-        public int AuthorId { get; set; }
-
-        public Author Author{get;set;}
         public List<Comment> Comments { get; set; }
+        public List<AuthorBooks> AuthorBooks { get;set;}
     }
 }

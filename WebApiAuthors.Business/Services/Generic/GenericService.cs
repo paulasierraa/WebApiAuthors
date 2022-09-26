@@ -56,7 +56,7 @@ namespace WebApiAuthors.Business.Services.Generic
             }
             catch(Exception e)
             {
-                response.Message = ResponseMessages.INTERNAL_SERVER_ERROR;
+                response.Message = ResponseMessages.INTERNAL_SERVER_ERROR+e;
                 response.Status = StatusCode.InternalServerError;
                 response.Content = null;
             }

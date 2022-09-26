@@ -34,15 +34,15 @@ namespace WebApiAuthors.Business.Services.Core
         }
         private void DoWork(object state)
         {
-            WriteFile("Proceso en ejecución"+DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
+           // WriteFile("Proceso en ejecución"+DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss"));
         }
         private void WriteFile(string message)
         {
-            var path = $@"D:\Temp\AuthorApi\{fileName}";
-            using(StreamWriter writer = new StreamWriter(path, append: true))
-            {
-                writer.WriteLine(message);
-            }
+            //var path = $@"D:\Temp\AuthorApi\{fileName}";
+            //using(StreamWriter writer = new StreamWriter(path, append: true))
+            //{
+            //    writer.WriteLine(message);
+            //}
         }
     }
 }
