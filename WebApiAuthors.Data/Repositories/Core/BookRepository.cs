@@ -17,5 +17,10 @@ namespace WebApiAuthors.Data.Repositories.Core
         public BookRepository(ApplicationDbContext context,IMapper mapper):base(context,mapper)
         {
         }
+
+        public async Task<BookResponse> GetById(int id)
+        {
+            this.Search()
+        }
     }
 }

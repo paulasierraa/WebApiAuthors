@@ -79,7 +79,6 @@ namespace WebApiAuthors.Data.GenericRepository
         {
             return await this.dbSet.ToListAsync();
         }
-
         public IQueryable<EntityBase> Search(Expression<Func<EntityBase,bool>> predicate)
         {
             return this.dbSet.Where(predicate);
